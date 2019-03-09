@@ -1,0 +1,46 @@
+body {
+  background: #262626;
+  margin: 0;
+ 
+
+}
+
+#head {
+  top-padding: 0px;
+  height: 60px;
+  background: #A5FFC9;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 2em;
+
+}
+
+#head a {
+  text-decoration: none;
+  color: #262626
+}
+
+.leftNav {
+  float: left;
+  margin-top: 8px;
+  margin-left: 2%;
+  width: 20%;
+}
+
+.rightNav {
+  float: right;
+  margin-top: 8px;
+  margin-right: 2%;
+}
+
+#logoImg {
+  margin-top: 3%;
+}
+
+#logo {
+  color: #FF936B;
+  font-size: 4em;
+  font-family: "Playfair Display", serif;
+  
+
+
+}
