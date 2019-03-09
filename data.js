@@ -4,8 +4,12 @@ abi = [
 		"constant": false,
 		"inputs": [
 			{
-				"name": "_id",
-				"type": "uint256"
+				"name": "_name",
+				"type": "string"
+			},
+			{
+				"name": "_email",
+				"type": "string"
 			},
 			{
 				"name": "_heartRate",
@@ -23,10 +27,35 @@ abi = [
 		"type": "function"
 	},
 	{
-		"inputs": [],
+		"constant": true,
+		"inputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"name": "patient",
+		"outputs": [
+			{
+				"name": "name",
+				"type": "string"
+			},
+			{
+				"name": "email",
+				"type": "string"
+			},
+			{
+				"name": "heartRate",
+				"type": "uint256"
+			},
+			{
+				"name": "bodyTemperature",
+				"type": "uint256"
+			}
+		],
 		"payable": false,
-		"stateMutability": "nonpayable",
-		"type": "constructor"
+		"stateMutability": "view",
+		"type": "function"
 	},
 	{
 		"constant": true,
@@ -40,7 +69,11 @@ abi = [
 		"outputs": [
 			{
 				"name": "",
-				"type": "uint256"
+				"type": "string"
+			},
+			{
+				"name": "",
+				"type": "string"
 			},
 			{
 				"name": "",
@@ -70,31 +103,9 @@ abi = [
 		"type": "function"
 	},
 	{
-		"constant": true,
-		"inputs": [
-			{
-				"name": "",
-				"type": "uint256"
-			}
-		],
-		"name": "patient",
-		"outputs": [
-			{
-				"name": "id",
-				"type": "uint256"
-			},
-			{
-				"name": "heartRate",
-				"type": "uint256"
-			},
-			{
-				"name": "bodyTemperature",
-				"type": "uint256"
-			}
-		],
+		"inputs": [],
 		"payable": false,
-		"stateMutability": "view",
-		"type": "function"
+		"stateMutability": "nonpayable",
+		"type": "constructor"
 	}
 ]
-
