@@ -48,29 +48,60 @@
     </div>
 
 
+    <!-- This is the container where the data of the user will be showed -->
+
    <div id="container">
 
         <div id = "userData">
 
+            <div class = 'box left'>
+            Hello!  <span class ='dataName'></span>
+            </div>
+
+            <div class = 'box right'>
+            <span class ='dataEmail'>    </span>
+            </div>
+
+            <div class = 'box left'>
+            Your heart rate is <span class ='dataHeartRate'> </span>
+            </div>
+
+            <div class = 'box right'>
+            Your temperature is <span class ='databodyTemperature'> </span>
+            </div>
+
         </div>
-
-
-
-
-
-
+        <center>
+        <div id = 'msg'>
+            This is Your data stored in our private blockchain.
+        </div>
+        </center>
 
    </div>
 
 
    <script>
-       accountAddress = "0x7cc0979471ff3f79a6f630e57000474759c5c2bf"
+
+
+
+
+       var accountAddress = "0x7cc0979471ff3f79a6f630e57000474759c5c2bf";
+       var name = 'test';
+       var email = 'test#testmail.com ';
+       var heart = '1221';
+       var bodytemp = '2342';
 
        document.querySelector('.dropdown-content').innerHTML = accountAddress;
-   
-   
-   
-   
+       document.querySelector('.dataName').innerHTML = name;
+       document.querySelector('.dataEmail').innerHTML = email;
+       document.querySelector('.dataHeartRate').innerHTML = heart;
+       document.querySelector('.databodyTemperature').innerHTML = bodytemp;
+
+
+
+
+
+
    </script>
 
 </body>
